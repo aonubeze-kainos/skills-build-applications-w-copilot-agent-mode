@@ -1,0 +1,95 @@
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.app-header {
+  background: #fff;
+  border-bottom: 1px solid #e7edf2;
+  box-shadow: 0 2px 12px rgb(25 52 78 / 4%);
+}
+
+.navbar-brand {
+  color: #12314a;
+  letter-spacing: -0.03em;
+}
+
+.navbar-brand img {
+  object-fit: contain;
+}
+
+.navbar-nav {
+  gap: 0.35rem;
+}
+
+.navbar-nav .nav-link {
+  border-radius: 999px;
+  color: #526779;
+  font-size: 0.95rem;
+  padding-inline: 1rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background: #eaf5f1;
+  color: #16745c;
+}
+
+.app-shell main {
+  flex: 1;
+}
+
+.section-eyebrow {
+  color: #19856b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.collection-card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.collection-card .table {
+  --bs-table-bg: transparent;
+}
+
+.collection-card thead th {
+  background: #f5f8fa;
+  border-bottom-color: #e7edf2;
+  color: #65798a;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 1rem 1.25rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.collection-card tbody td {
+  color: #294154;
+  padding: 1rem 1.25rem;
+}
+
+.rank-number {
+  align-items: center;
+  background: #eaf5f1;
+  border-radius: 50%;
+  color: #16745c;
+  display: inline-flex;
+  font-weight: 700;
+  height: 2rem;
+  justify-content: center;
+  width: 2rem;
+}
+
+.app-footer {
+  background: #f5f8fa;
+  color: #718393;
+}
