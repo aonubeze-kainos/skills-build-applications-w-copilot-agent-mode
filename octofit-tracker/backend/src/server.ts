@@ -9,7 +9,7 @@ import teamsRouter from './routes/teams.js';
 import usersRouter from './routes/users.js';
 import workoutsRouter from './routes/workouts.js';
 
-export const port = Number(process.env.PORT) || 8000;
+export const PORT = Number(process.env.PORT) || 8000;
 const codespaceName = process.env.CODESPACE_NAME;
 export const baseUrl = codespaceName
   ? `https://${codespaceName}-8000.app.github.dev`
@@ -57,7 +57,7 @@ app.use(errorHandler);
 
 export async function startServer() {
   await connectDatabase();
-  return app.listen(port, '0.0.0.0', () => {
+  return app.listen(PORT, '0.0.0.0', () => {
     console.log(`OctoFit API listening at ${baseUrl}`);
   });
 }
